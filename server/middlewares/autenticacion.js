@@ -63,8 +63,25 @@ let verificaRole = (req,res,next)=>{
 };
 
 
+//======================
+// Verificar Token
+//======================
+
+let verificaTokenImg = (req,res,next)=>{
+
+
+	let token = req.query.token;
+
+	res.json({
+		token
+	})
+
+}
+
+
 
 module.exports = {
 	verificaToken,
-	verificaRole
+	verificaRole,
+	verificaTokenImg
 }

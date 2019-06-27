@@ -20,8 +20,7 @@ app.get('/categoria', (req, res) => {
     if (err) {
             return res.status(500).json({
                 ok: false,
-               
-
+            
                 err
             });
         }   
